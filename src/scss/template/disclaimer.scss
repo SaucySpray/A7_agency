@@ -1,0 +1,45 @@
+.disclaimer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100vw - 40px);
+    height: 100vh;
+    padding: 0 20px;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: $color__white;
+
+    @media screen and (min-width: 320px) {
+        display: none;
+    }
+
+    &__text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        font-family: 'DIN';
+        font-size: 2.4rem;
+        color: $color__black;
+
+        &__head {
+            font-weight: 600;
+        }
+
+        &__message {
+            font-weight: 200;
+        }
+    }
+
+    &__logo {
+        width: 24rem;
+        position: absolute;
+        top: calc(50% - 9rem);
+        fill: $color__blue;
+        opacity: 0.32;
+    }
+}

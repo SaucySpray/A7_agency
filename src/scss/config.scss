@@ -1,0 +1,45 @@
+html { font-size: 10px; }
+body { margin: 0; }
+
+/* FONTS */
+@font-face {
+    font-family: 'DIN';
+    src: url('../assets/fonts/DIN-Light.ttf');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'DIN';
+    src: url('../assets/fonts/DIN-Bold.ttf');
+    font-weight: 600;
+}
+
+/* COLORS */
+$color__white: #fff;
+$color__black: #000;
+$color__blue: #0B5679;
+$color__grey: #8B8B8B;
+
+/* VIEWPORTS */
+$viewport__lg: 1440px;
+$viewport__lg--offset: 120px;
+$viewport__md: 1024px;
+$viewport__md--offset: 40px;
+$viewport__sm: 480px;
+$viewport__sm--offset: 20px;
+
+main {
+    width: calc(100% - 240px);
+    height: 100vh;
+    padding: 0 120px;
+
+    @media screen and(max-width: $viewport__md) {
+        width: calc(100% - 80px);
+        padding: 0 $viewport__md--offset;
+    }
+
+    @media screen and(max-width: $viewport__sm) {
+        width: calc(100% - 40px);
+        padding: 0 $viewport__sm--offset;
+    }
+}

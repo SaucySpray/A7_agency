@@ -1,0 +1,91 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: calc(100% - 240px);
+    height: 8rem;
+    padding: 0 $viewport__lg--offset;
+    position: fixed;
+    user-select: none;
+
+    @media screen and (max-width: $viewport__md) {
+        width: calc(100% - 80px);
+        padding: 0 $viewport__md--offset;
+    }
+
+    @media screen and (max-width: $viewport__sm) {
+        width: calc(100% - 40px);
+        padding: 0 $viewport__sm--offset;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: auto;
+        height: 100%;
+
+        &__el {
+            font-family: 'DIN';
+            font-size: 1.6rem;
+            font-weight: 600;
+            letter-spacing: 0.1rem;
+            margin: 0 2.2rem;
+            color: $color__white;
+            opacity: 0.32;
+            transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            cursor: pointer;
+            position: relative;
+
+            @media screen and (max-width: $viewport__sm) {
+                font-size: 1.4rem;
+                margin: 0 1.2rem;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -0.6rem;
+                width: 0;
+                height: 0.2rem;
+                background-color: $color__white;
+                transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+            }
+            
+            &:first-child {
+                margin-left: 0;
+            }
+            
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:hover {
+                opacity: 1;
+
+                &::after {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    &__logo {
+        width: 3rem;
+        padding: 0 1.2rem;
+        height: 5.4rem;
+        border: 0.2rem solid $color__white;
+        border-radius: 100%;
+        fill: $color__white;
+        transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        cursor: pointer;
+
+        &:hover {
+            fill: $color__blue;
+            background-color: $color__white;
+        }
+    }
+}
