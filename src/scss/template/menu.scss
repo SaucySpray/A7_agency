@@ -1,0 +1,83 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 45;
+    top: calc(50% - 18.45rem);
+    left: 120px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    @media screen and (max-width: $viewport__lg) {
+        top: calc(50% - 13.2rem);
+    }
+
+    @media screen and (max-width: $viewport__md) {
+        display: none;
+        flex-direction: row;
+        top: auto;
+        bottom: 4rem;
+        left: 40px;
+        width: calc(100% - 8rem);
+    }
+
+    @media screen and (max-width: $viewport__sm) {
+        left: 20px;
+        width: calc(100% - 4rem);
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: calc(50% - 16.2rem);
+        left: -3.2rem;
+        width: 0.1rem;
+        height: 90%;
+        background-color: rgba($color: $color__white, $alpha: 0.32);
+
+        @media screen and (max-width: $viewport__lg) {
+            top: calc(50% - 11.5rem);
+        }
+    }
+
+    &__el {
+        font-family: 'DIN';
+        font-size: 10rem;
+        font-weight: 600;
+        color: $color__white;
+        opacity: 0.32;
+        cursor: pointer;
+        user-select: none;
+        transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+        @media screen and (max-width: $viewport__lg) {
+            font-size: 7.2rem;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        @media screen and (max-width: $viewport__md) {
+            margin: 0 auto;
+            font-size: 3.8rem;
+        }
+
+        @media screen and (max-width: $viewport__sm) {
+            font-size: 2.6rem;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.js-menu-active {
+    opacity: 1;
+}

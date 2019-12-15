@@ -4,11 +4,15 @@
     width: 15rem;
     height: 14rem;
     position: fixed;
+    z-index: 100;
     top: calc(50% - 7rem);
     right: 12rem;
 
+    @media screen and(max-width: $viewport__lg) {
+        display: none;
+    }
+
     @media screen and(max-width: $viewport__md) {
-        top: 10rem;
         right: 4rem;
     }
 

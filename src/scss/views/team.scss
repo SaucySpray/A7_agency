@@ -1,0 +1,78 @@
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('../assets/images/team/home-landing-visuel3.png');
+    user-select: none;
+    position: relative;
+
+    @media screen and(max-width: $viewport__lg) {
+        align-items: flex-end;
+    }
+
+    @media screen and(max-width: $viewport__md) {
+        align-items: center;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: row wrap;
+        width: 74rem;
+        height: 62rem;
+        position: relative;
+        z-index: 50;
+        margin-left: 17.8rem;
+
+        @media screen and(max-width: $viewport__lg) {
+            margin: 0 11rem 0 0;
+        }
+
+        @media screen and(max-width: $viewport__md) {
+            justify-content: space-between;
+            width: 40.4rem;
+            height: auto;
+            margin: 0;
+        }
+    }
+
+    &__member {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        box-sizing: border-box;
+        margin: 1.5rem 1rem;
+
+        &__image {
+            width: 16.5rem;
+
+            @media screen and(max-width: $viewport__md) {
+                width: 11.4rem;
+            }
+        }
+
+        &__name {
+            font-family: 'DIN';
+            font-weight: 400;
+            font-size: 1.4rem;
+            color: $color__white;
+            margin: 0.6rem 0;
+        }
+
+        &__job {
+            font-family: 'DIN';
+            font-weight: 400;
+            font-size: 1rem;
+            color: $color__white;
+            text-transform: uppercase;
+        }
+    }
+}

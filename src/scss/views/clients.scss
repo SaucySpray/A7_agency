@@ -1,0 +1,59 @@
+.clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('../assets/images/clients/home-landing-visuel4.png');
+    user-select: none;
+    position: relative;
+
+    @media screen and(max-width: $viewport__lg) {
+        align-items: flex-end;
+    }
+
+    &__content {
+        display: flex;
+        flex-flow: row wrap;
+        width: 70.6rem;
+        margin-left: 17.8rem;
+        position: relative;
+        z-index: 50;
+
+        @media screen and(max-width: $viewport__lg) {
+            margin: 0 10.4rem 0 0;
+        }
+
+        @media screen and(max-width: $viewport__md) {
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 2.7rem;
+            margin: 0;
+        }
+
+        @media screen and(max-width: $viewport__sm) {
+            padding: 0;
+        }
+    }
+
+    &__client {
+        width: 14.6rem;
+        height: 14.6rem;
+        box-sizing: border-box;
+        margin: 1.5rem;
+        object-fit: contain;
+        object-position: center;
+        background-color: rgba($color: $color__black, $alpha: 0.32);
+
+        @media screen and(max-width: $viewport__sm) {
+            width: 10rem;
+            height: 10rem;
+        }
+    }
+}

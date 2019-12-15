@@ -7,6 +7,7 @@
     height: 8rem;
     padding: 0 $viewport__lg--offset;
     position: fixed;
+    z-index: 100;
     user-select: none;
 
     @media screen and (max-width: $viewport__md) {
