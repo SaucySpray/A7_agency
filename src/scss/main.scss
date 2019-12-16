@@ -1,9 +1,15 @@
 @import 'config';
+
 @import 'template/disclaimer';
 @import 'template/header';
 @import 'template/sidemenu';
 @import 'template/menu';
+
 @import 'views/home';
 @import 'views/about';
 @import 'views/team';
 @import 'views/clients';
+
+@import 'animations/parallax';
+@import 'animations/anims';
+@import 'animations/keyframes';

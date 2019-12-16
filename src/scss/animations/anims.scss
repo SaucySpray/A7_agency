@@ -1,0 +1,27 @@
+[data-animation="content"], [data-animation="intro"] {
+    opacity: 0;
+}
+
+.transition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    user-select: none;
+    pointer-events: none;
+    background-color: #000;
+    z-index: 1000;
+    opacity: 1;
+
+    &__loader {
+        position: relative;
+        left: 2.5em;
+        width: 15rem;
+        height: 15rem;
+    }
+}

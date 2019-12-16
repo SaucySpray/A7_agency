@@ -1,4 +1,4 @@
-html { font-size: 10px; } //overflow: hidden;
+html { font-size: 10px; overflow: hidden; }
 body { margin: 0; }
 
 /* FONTS */
@@ -34,23 +34,23 @@ $viewport__md--offset: 40px;
 $viewport__sm: 480px;
 $viewport__sm--offset: 20px;
 
-// .main {
-//     width: calc(100% - 240px);
-//     padding: 0 120px;
-//     box-sizing: border-box;
-
-//     @media screen and(max-width: $viewport__md) {
-//         width: calc(100% - 80px);
-//         padding: 0 $viewport__md--offset;
-//     }
-
-//     @media screen and(max-width: $viewport__sm) {
-//         width: calc(100% - 40px);
-//         padding: 0 $viewport__sm--offset;
-//     }
-// }
-
 .container {
     max-height: 100vh;
     overflow-y: hidden;
+
+    &__bg {
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+}
+
+.case {
+    user-select: none;
+
+    &__initial {
+
+    }
 }

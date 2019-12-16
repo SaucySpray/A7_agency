@@ -8,13 +8,13 @@
 </head>
 <body>
 
-    <header class="header">
-        <nav class="header__nav">
+    <header class="header" data-parallax="header">
+        <nav class="header__nav" data-animation="intro">
             <div class="header__nav__el js-menu-el js-menu-about">About</div>
             <div class="header__nav__el js-menu-el js-menu-team">Team</div>
             <div class="header__nav__el js-menu-el js-menu-clients">Clients</div>
         </nav>
-        <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.48 75.36">
+        <svg data-animation="intro" class="header__logo js-menu-el" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.48 75.36">
             <g id="Layer_1-2" data-name="Layer 1">
                 <rect class="cls-1" x="56.18" width="25.91" height="10.48" />
                 <polygon class="cls-1" points="88.28 25.13 100.48 25.13 75.36 75.36 63.49 75.36 88.28 25.13" />
@@ -23,8 +23,8 @@
         </svg>
     </header>
 
-    <div class="sidemenu">
-        <h2 class="sidemenu__text">
+    <div class="sidemenu" data-parallax="sidemenu">
+        <h2 class="sidemenu__text" data-animation="intro">
             <span class="sidemenu__static">with<br>a7 agency</span>
             <span class="sidemenu__hover">see</span>
             <span class="sidemenu__static">beyond for </span>
@@ -34,121 +34,153 @@
         </h2>
     </div>
     
-    <ul class="menu">
-        <li class="menu__el js-menu-el js-menu-about">About</li>
-        <li class="menu__el js-menu-el js-menu-team">Team</li>
-        <li class="menu__el js-menu-el js-menu-clients">Clients</li>
+    <ul class="menu" data-parallax="menu">
+        <div class="menu__line" data-animation="menu-line"></div>
+        <div class="menu__elements">
+            <li class="menu__el js-menu-el js-menu-about" data-animation="menu-el">About</li>
+            <li class="menu__el js-menu-el js-menu-team" data-animation="menu-el">Team</li>
+            <li class="menu__el js-menu-el js-menu-clients" data-animation="menu-el">Clients</li>
+        </div>
     </ul>
+
+    <div class="transition">
+        <svg class="transition__loader">
+            <g>
+                <path stroke="white" stroke-width="2" class="st0" d="M81.1,1v8.5H57.2V1H81.1 M82.1,0H56.2v10.5h25.9V0L82.1,0z" />
+                <path stroke="white" stroke-width="2" class="st0"
+                    d="M98.9,26.1L74.7,74.4h-9.6l23.8-48.2H98.9 M100.5,25.1H88.3L63.5,75.4h11.9L100.5,25.1L100.5,25.1z" />
+                <path stroke="white" stroke-width="2" class="st0"
+                    d="M37.2,2.3l17.4,37.5H45l-6.9-15.4l-0.9-1.9l-0.9,1.9L21.6,53.8l-0.7,1.4h1.6h13.3v8.1H17.4h-0.6l-0.3,0.6 l-5.3,10.5H1.6L37.2,2.3 M37.2,0L0,75.4h11.9l5.5-11.1h19.4V54.2H22.5l14.7-29.5l7.1,16h11.9L37.2,0L37.2,0z" />
+            </g>
+        </svg>
+    </div>
 
     <main class="main">
 
-        <div id="home" class="home container">
-        
-            <div class="home__contact">
-                <h2 class="home__contact__text">We are creators of digital experience.<br>Want to discover more ?</h2>
-                <div class="home__contact__email">
-                    <div class="home__contact__email--placeholder">Send us your email</div>
-                    <form action="" class="home__contact__form">
-                        <input class="home__contact__email--input" type="email">
-                        <input class="home__contact__email--submit" type="submit" value="Submit">
-                    </form>
+        <div id="home" class="home container case case--0">
+
+            <img src="./assets/images/home/home-landing-visuel.png" alt="home illustration" class="home__bg container__bg" data-parallax="home-bg">
+
+            <div class="home__wrapper" data-animation="content">
+                <div class="home__contact" data-parallax="home">
+                    <h2 class="home__contact__text">We are creators of digital experience.<br>Want to discover more ?</h2>
+                    <div class="home__contact__email">
+                        <div class="home__contact__email--placeholder">Send us your email</div>
+                        <form action="" class="home__contact__form">
+                            <input class="home__contact__email--input" type="email">
+                            <input class="home__contact__email--submit" type="submit" value="Submit">
+                        </form>
+                    </div>
                 </div>
             </div>
-        
+
         </div>
         
-        <div id="about" class="about container">
-            <div class="about__content">
-                <h3 class="about__content__title">We believe that everything is emotion! Emotion is the source of a stimulating
-                    force that prepares us for action.</h3>
-                <p class="about__content__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                    tempor invidunt ut labore et dolore
-                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-                    kasd
-                    gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <div id="about" class="about container case case--1">
+
+            <img src="./assets/images/about/home-landing-visuel-2.png" alt="about illustration" class="about__bg container__bg" data-parallax="about-bg">
+
+            <div class="about__wrapper" data-animation="content">
+                <div class="about__content" data-parallax="about">
+                    <h3 class="about__content__title">We believe that everything is emotion! Emotion is the source of a stimulating force that prepares us for action.</h3>
+                    <p class="about__content__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                </div>
             </div>
+
         </div>
         
-        <div id="team" class="team container">
-            <div class="team__content">
-                <div class="team__member team__member--1">
-                    <img class="team__member__image" src="./assets/images/team/members/member_01.png" />
-                    <div class="team__member__infos">
-                        <div class="team__member__name">Nom Prénom</div>
-                        <div class="team__member__job">Poste</div>
+        <div id="team" class="team container case case--2">
+
+            <img src="./assets/images/team/home-landing-visuel3.png" alt="team illustration" class="team__bg container__bg container__bg container__bg" data-parallax="team-bg">
+
+            <div class="team__wrapper">
+                <div class="team__content" data-parallax="team">
+                    <div class="team__member team__member--1" data-animation="content">
+                        <img class="team__member__image" src="./assets/images/team/members/member_01.png" />
+                        <div class="team__member__infos">
+                            <div class="team__member__name">Nom Prénom</div>
+                            <div class="team__member__job">Poste</div>
+                        </div>
                     </div>
-                </div>
-                <div class="team__member team__member--2">
-                    <img class="team__member__image" src="./assets/images/team/members/member_02.png" />
-                    <div class="team__member__infos">
-                        <div class="team__member__name">Nom Prénom</div>
-                        <div class="team__member__job">Poste</div>
+                    <div class="team__member team__member--2" data-animation="content">
+                        <img class="team__member__image" src="./assets/images/team/members/member_02.png" />
+                        <div class="team__member__infos">
+                            <div class="team__member__name">Nom Prénom</div>
+                            <div class="team__member__job">Poste</div>
+                        </div>
                     </div>
-                </div>
-                <div class="team__member team__member--3">
-                    <img class="team__member__image" src="./assets/images/team/members/member_03.png" />
-                    <div class="team__member__infos">
-                        <div class="team__member__name">Nom Prénom</div>
-                        <div class="team__member__job">Poste</div>
+                    <div class="team__member team__member--3" data-animation="content">
+                        <img class="team__member__image" src="./assets/images/team/members/member_03.png" />
+                        <div class="team__member__infos">
+                            <div class="team__member__name">Nom Prénom</div>
+                            <div class="team__member__job">Poste</div>
+                        </div>
                     </div>
-                </div>
-                <div class="team__member team__member--4">
-                    <img class="team__member__image" src="./assets/images/team/members/member_01.png" />
-                    <div class="team__member__infos">
-                        <div class="team__member__name">Nom Prénom</div>
-                        <div class="team__member__job">Poste</div>
+                    <div class="team__member team__member--4" data-animation="content">
+                        <img class="team__member__image" src="./assets/images/team/members/member_01.png" />
+                        <div class="team__member__infos">
+                            <div class="team__member__name">Nom Prénom</div>
+                            <div class="team__member__job">Poste</div>
+                        </div>
                     </div>
-                </div>
-                <div class="team__member team__member--5">
-                    <img class="team__member__image" src="./assets/images/team/members/member_02.png" />
-                    <div class="team__member__infos">
-                        <div class="team__member__name">Nom Prénom</div>
-                        <div class="team__member__job">Poste</div>
+                    <div class="team__member team__member--5" data-animation="content">
+                        <img class="team__member__image" src="./assets/images/team/members/member_02.png" />
+                        <div class="team__member__infos">
+                            <div class="team__member__name">Nom Prénom</div>
+                            <div class="team__member__job">Poste</div>
+                        </div>
                     </div>
-                </div>
-                <div class="team__member team__member--6">
-                    <img class="team__member__image" src="./assets/images/team/members/member_03.png" />
-                    <div class="team__member__infos">
-                        <div class="team__member__name">Nom Prénom</div>
-                        <div class="team__member__job">Poste</div>
+                    <div class="team__member team__member--6" data-animation="content">
+                        <img class="team__member__image" src="./assets/images/team/members/member_03.png" />
+                        <div class="team__member__infos">
+                            <div class="team__member__name">Nom Prénom</div>
+                            <div class="team__member__job">Poste</div>
+                        </div>
                     </div>
-                </div>
-                <div class="team__member team__member--7">
-                    <img class="team__member__image" src="./assets/images/team/members/member_01.png" />
-                    <div class="team__member__infos">
-                        <div class="team__member__name">Nom Prénom</div>
-                        <div class="team__member__job">Poste</div>
+                    <div class="team__member team__member--7" data-animation="content">
+                        <img class="team__member__image" src="./assets/images/team/members/member_01.png" />
+                        <div class="team__member__infos">
+                            <div class="team__member__name">Nom Prénom</div>
+                            <div class="team__member__job">Poste</div>
+                        </div>
                     </div>
-                </div>
-                <div class="team__member team__member--8">
-                    <img class="team__member__image" src="./assets/images/team/members/member_02.png" />
-                    <div class="team__member__infos">
-                        <div class="team__member__name">Nom Prénom</div>
-                        <div class="team__member__job">Poste</div>
+                    <div class="team__member team__member--8" data-animation="content">
+                        <img class="team__member__image" src="./assets/images/team/members/member_02.png" />
+                        <div class="team__member__infos">
+                            <div class="team__member__name">Nom Prénom</div>
+                            <div class="team__member__job">Poste</div>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
         
-        <div id="clients" class="clients container">
-            <div class="clients__content">
-                <img src="./assets/images/clients/logov2/bnw/michelin-logo.png" alt="michelin"
-                    class="clients__client clients__client--1">
-                <img src="./assets/images/clients/logov2/bnw/orange-logo.png" alt="orange"
-                    class="clients__client clients__client--2">
-                <img src="./assets/images/clients/logov2/bnw/hasbro-logo.png" alt="hasbro"
-                    class="clients__client clients__client--3">
-                <img src="./assets/images/clients/logov2/bnw/formulaE-logo.png" alt="formula-e"
-                    class="clients__client clients__client--4">
-                <img src="./assets/images/clients/logov2/bnw/michelin-logo.png" alt="michelin"
-                    class="clients__client clients__client--5">
-                <img src="./assets/images/clients/logov2/bnw/orange-logo.png" alt="orange"
-                    class="clients__client clients__client--6">
-                <img src="./assets/images/clients/logov2/bnw/hasbro-logo.png" alt="hasbro"
-                    class="clients__client clients__client--7">
-                <img src="./assets/images/clients/logov2/bnw/formulaE-logo.png" alt="formula-e"
-                    class="clients__client clients__client--8">
+        <div id="clients" class="clients container case case--3">
+
+            <img src="./assets/images/clients/home-landing-visuel4.png" alt="clients illustration" class="clients__bg container__bg" data-parallax="clients-bg">
+
+            <div class="clients__wrapper">
+                <div class="clients__content" data-parallax="clients">
+                    <img data-animation="content" src="./assets/images/clients/logov2/bnw/michelin-logo.png" alt="michelin"
+                        class="clients__client clients__client--1">
+                    <img data-animation="content" src="./assets/images/clients/logov2/bnw/orange-logo.png" alt="orange"
+                        class="clients__client clients__client--2">
+                    <img data-animation="content" src="./assets/images/clients/logov2/bnw/hasbro-logo.png" alt="hasbro"
+                        class="clients__client clients__client--3">
+                    <img data-animation="content" src="./assets/images/clients/logov2/bnw/formulaE-logo.png" alt="formula-e"
+                        class="clients__client clients__client--4">
+                    <img data-animation="content" src="./assets/images/clients/logov2/bnw/michelin-logo.png" alt="michelin"
+                        class="clients__client clients__client--5">
+                    <img data-animation="content" src="./assets/images/clients/logov2/bnw/orange-logo.png" alt="orange"
+                        class="clients__client clients__client--6">
+                    <img data-animation="content" src="./assets/images/clients/logov2/bnw/hasbro-logo.png" alt="hasbro"
+                        class="clients__client clients__client--7">
+                    <img data-animation="content" src="./assets/images/clients/logov2/bnw/formulaE-logo.png" alt="formula-e"
+                        class="clients__client clients__client--8">
+                </div>
             </div>
+
         </div>
 
     </main>

@@ -6,12 +6,9 @@
     width: 100%;
     min-height: 100vh;
     box-sizing: border-box;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-image: url('../assets/images/team/home-landing-visuel3.png');
     user-select: none;
     position: relative;
+    overflow: hidden;
 
     @media screen and(max-width: $viewport__lg) {
         align-items: flex-end;
@@ -19,6 +16,16 @@
 
     @media screen and(max-width: $viewport__md) {
         align-items: center;
+    }
+
+    &__bg {
+        width: 120%;
+        height: 120%;
+        position: absolute;
+        top: -10%;
+        left: -10%;
+        object-fit: cover;
+        object-position: center;
     }
 
     &__content {
@@ -41,6 +48,12 @@
             height: auto;
             margin: 0;
         }
+
+        @media screen and(max-width: $viewport__sm) {
+            justify-content: space-around;
+            width: 100%;
+        }
+
     }
 
     &__member {
@@ -50,6 +63,12 @@
         flex-direction: column;
         box-sizing: border-box;
         margin: 1.5rem 1rem;
+
+        &:nth-last-child(-n+2) {
+            @media screen and(max-width: $viewport__md) {
+                display: none;
+            }
+        }
 
         &__image {
             width: 16.5rem;

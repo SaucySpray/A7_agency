@@ -1,13 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.48 75.36">
-    <defs>
-        <style>.cls-1{fill:#fff;}</style>
-    </defs>
-    <title>Logo A7 Agency</title>
-    <g id="Layer_2" data-name="Layer 2">
-        <g id="Layer_1-2" data-name="Layer 1">
-            <rect class="cls-1" x="56.18" width="25.91" height="10.48"/>
-            <polygon class="cls-1" points="88.28 25.13 100.48 25.13 75.36 75.36 63.49 75.36 88.28 25.13"/>
-            <polygon class="cls-1" points="37.19 0 0 75.36 11.87 75.36 17.41 64.29 36.79 64.29 36.79 54.2 22.45 54.2 37.19 24.73 44.31 40.77 56.18 40.77 37.19 0"/>
-        </g>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.48 75.36"><defs><style>.a{fill:#fff;}</style></defs><title>logo</title><path class="a" d="M81.09,1V9.48H57.18V1H81.09m1-1H56.18V10.48H82.09V0Z" transform="translate(0)"/><path class="a" d="M98.86,26.13,74.74,74.36H65.1L88.9,26.13h10m1.62-1H88.28L63.49,75.36H75.36l25.12-50.23Z" transform="translate(0)"/><path class="a" d="M37.16,2.31,54.61,39.77H45L38.1,24.32l-.86-1.93-.94,1.89L21.56,53.75l-.73,1.45h15v8.09h-19l-.27.55L11.25,74.36H1.61l35.55-72m0-2.31L0,75.36H11.87l5.54-11.07H36.79V54.2H22.45L37.19,24.73l7.12,16H56.18L37.19,0Z" transform="translate(0)"/></svg>

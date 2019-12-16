@@ -1,16 +1,21 @@
 .menu {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
+    height: 36rem;
     position: fixed;
     z-index: 45;
     top: calc(50% - 18.45rem);
     left: 120px;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 16rem 0 0;
+    overflow-y: hidden;
+    overflow-x: visible;
 
     @media screen and (max-width: $viewport__lg) {
         top: calc(50% - 13.2rem);
+        height: 26rem;
     }
 
     @media screen and (max-width: $viewport__md) {
@@ -27,18 +32,15 @@
         width: calc(100% - 4rem);
     }
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: calc(50% - 16.2rem);
-        left: -3.2rem;
-        width: 0.1rem;
-        height: 90%;
-        background-color: rgba($color: $color__white, $alpha: 0.32);
+    &__elements {
+        display: flex;
+        flex-direction: column;
+    }
 
-        @media screen and (max-width: $viewport__lg) {
-            top: calc(50% - 11.5rem);
-        }
+    &__line {
+        width: 0.2rem;
+        height: 0;
+        background-color: rgba($color: $color__white, $alpha: 0.32);
     }
 
     &__el {
@@ -49,6 +51,8 @@
         opacity: 0.32;
         cursor: pointer;
         user-select: none;
+        position: relative;
+        left: -150%;
         transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 
         @media screen and (max-width: $viewport__lg) {

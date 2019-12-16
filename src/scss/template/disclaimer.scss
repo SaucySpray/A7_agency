@@ -10,7 +10,7 @@
     z-index: 100;
     top: 0;
     left: 0;
-    background-color: $color__white;
+    background-color: $color__black;
 
     @media screen and (min-width: 320px) {
         display: none;
@@ -24,7 +24,7 @@
         width: 100%;
         font-family: 'DIN';
         font-size: 2.4rem;
-        color: $color__black;
+        color: $color__white;
 
         &__head {
             font-weight: 600;
@@ -39,7 +39,7 @@
         width: 24rem;
         position: absolute;
         top: calc(50% - 9rem);
-        fill: $color__blue;
+        fill: $color__white;
         opacity: 0.32;
     }
 }
